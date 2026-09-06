@@ -246,13 +246,49 @@
             margin: auto;
         }
 
+        .contact-options {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .contact-btn {
+            padding: 14px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+        }
+
+        .email-btn {
+            background: #1e3a8a;
+            color: white;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+
         form {
             display: flex;
             flex-direction: column;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
         input,
-        textarea {
+        textarea,
+        select {
             padding: 15px;
             margin-bottom: 18px;
             border: 1px solid #ddd;
@@ -262,7 +298,7 @@
 
         textarea {
             height: 150px;
-            resize: none;
+            resize: vertical;
         }
 
         button {
@@ -273,6 +309,7 @@
             border-radius: 8px;
             font-size: 17px;
             cursor: pointer;
+            transition: 0.3s;
         }
 
         button:hover {
@@ -331,10 +368,7 @@
 
 <body>
 
-    <!-- NAVBAR -->
-
     <nav>
-
         <div class="logo">
             PRIME <span>Digital Solutions</span>
         </div>
@@ -346,11 +380,8 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-
     </nav>
 
-
-    <!-- HERO SECTION -->
 
     <section class="hero" id="home">
 
@@ -366,290 +397,203 @@
                 presence, attract more customers and achieve digital growth.
             </p>
 
-            <a href="#contact" class="btn">
-                Get Started
-            </a>
+            <a href="#contact" class="btn">Get Started</a>
 
         </div>
 
     </section>
 
 
-    <!-- ABOUT -->
-
     <section class="about" id="about">
 
         <div class="section-title">
-
             <h2>About PRIME Digital Solutions</h2>
-
         </div>
 
         <p>
             PRIME Digital Solutions is a professional digital marketing agency
             focused on helping businesses grow in the digital world. We provide
-            creative, strategic and result-oriented marketing solutions to
-            improve your brand visibility and connect you with your target
-            audience.
+            creative, strategic and result-oriented marketing solutions.
         </p>
 
     </section>
 
 
-    <!-- SERVICES -->
-
     <section id="services">
 
         <div class="section-title">
-
             <h2>Our Services</h2>
-
-            <p>
-                Everything your business needs to grow online.
-            </p>
-
+            <p>Everything your business needs to grow online.</p>
         </div>
-
 
         <div class="services-container">
 
-
             <div class="service-card">
-
                 <div class="service-icon">📱</div>
-
                 <h3>Social Media Marketing</h3>
-
-                <p>
-                    Grow your business on Instagram, Facebook and other social
-                    media platforms with engaging content and strategies.
-                </p>
-
+                <p>Grow your business with engaging social media content and strategies.</p>
             </div>
 
-
             <div class="service-card">
-
                 <div class="service-icon">🔍</div>
-
                 <h3>SEO Services</h3>
-
-                <p>
-                    Improve your website visibility and rank higher on search
-                    engines to attract more organic traffic.
-                </p>
-
+                <p>Improve your website visibility and attract more organic traffic.</p>
             </div>
 
-
             <div class="service-card">
-
                 <div class="service-icon">💻</div>
-
                 <h3>Website Development</h3>
-
-                <p>
-                    Professional, responsive and modern websites designed to
-                    represent your business online.
-                </p>
-
+                <p>Professional, responsive and modern websites for your business.</p>
             </div>
 
-
             <div class="service-card">
-
                 <div class="service-icon">📢</div>
-
                 <h3>Paid Advertising</h3>
-
-                <p>
-                    Reach your ideal customers through effective Google and
-                    social media advertising campaigns.
-                </p>
-
+                <p>Reach your ideal customers through targeted advertising campaigns.</p>
             </div>
 
-
             <div class="service-card">
-
                 <div class="service-icon">✍️</div>
-
                 <h3>Content Marketing</h3>
-
-                <p>
-                    Creative content that helps your brand communicate,
-                    engage and build trust with customers.
-                </p>
-
+                <p>Creative content that engages customers and builds trust.</p>
             </div>
-
 
             <div class="service-card">
-
                 <div class="service-icon">🎨</div>
-
                 <h3>Branding & Design</h3>
-
-                <p>
-                    Build a strong brand identity with professional designs,
-                    creative visuals and consistent branding.
-                </p>
-
+                <p>Build a strong and professional identity for your brand.</p>
             </div>
-
 
         </div>
 
     </section>
 
-
-    <!-- WHY CHOOSE US -->
 
     <section class="why">
 
         <div class="section-title">
-
             <h2>Why Choose Us?</h2>
-
-            <p>
-                Your growth is our priority.
-            </p>
-
+            <p>Your growth is our priority.</p>
         </div>
-
 
         <div class="why-container">
 
-
             <div class="why-card">
-
                 <h3>Creative Strategies</h3>
-
-                <p>
-                    Unique marketing ideas designed specifically for your brand.
-                </p>
-
+                <p>Unique marketing ideas designed specifically for your brand.</p>
             </div>
 
-
             <div class="why-card">
-
                 <h3>Result Focused</h3>
-
-                <p>
-                    We focus on strategies that help generate real business
-                    growth.
-                </p>
-
+                <p>We focus on strategies that help generate real business growth.</p>
             </div>
 
-
             <div class="why-card">
-
                 <h3>Affordable Solutions</h3>
-
-                <p>
-                    Professional digital marketing services suitable for
-                    businesses of different sizes.
-                </p>
-
+                <p>Professional solutions suitable for businesses of different sizes.</p>
             </div>
-
 
             <div class="why-card">
-
                 <h3>Dedicated Support</h3>
-
-                <p>
-                    We work closely with you to help your business succeed
-                    online.
-                </p>
-
+                <p>We work closely with you to help your business succeed online.</p>
             </div>
-
 
         </div>
 
     </section>
 
-
-    <!-- PORTFOLIO -->
 
     <section id="portfolio">
 
         <div class="section-title">
-
             <h2>Our Work</h2>
-
-            <p>
-                Some examples of the solutions we provide.
-            </p>
-
+            <p>Some examples of the solutions we provide.</p>
         </div>
-
 
         <div class="portfolio-container">
 
-            <div class="portfolio-card">
-                Social Media Campaigns
-            </div>
-
-            <div class="portfolio-card">
-                Website Projects
-            </div>
-
-            <div class="portfolio-card">
-                SEO Campaigns
-            </div>
+            <div class="portfolio-card">Social Media Campaigns</div>
+            <div class="portfolio-card">Website Projects</div>
+            <div class="portfolio-card">SEO Campaigns</div>
 
         </div>
 
     </section>
 
 
-    <!-- CONTACT -->
+    <!-- CONTACT SECTION -->
 
     <section class="contact" id="contact">
 
         <div class="section-title">
-
             <h2>Let's Grow Your Business</h2>
-
-            <p>
-                Get in touch with PRIME Digital Solutions today.
-            </p>
-
+            <p>Get in touch with PRIME Digital Solutions today.</p>
         </div>
-
 
         <div class="contact-container">
 
-            <form>
+            <!-- DIRECT CONTACT BUTTONS -->
+
+            <div class="contact-options">
+
+                <a href="https://wa.me/918699326535"
+                   target="_blank"
+                   class="contact-btn whatsapp-btn">
+                    💬 Chat on WhatsApp
+                </a>
+
+                <a href="mailto:kashishbassi500@gmail.com"
+                   class="contact-btn email-btn">
+                    📧 Send an Email
+                </a>
+
+            </div>
+
+
+            <!-- WHATSAPP FORM -->
+
+            <form id="contactForm">
 
                 <input
                     type="text"
+                    id="name"
                     placeholder="Your Name"
                     required
                 >
 
                 <input
                     type="email"
+                    id="email"
                     placeholder="Your Email"
                     required
                 >
 
                 <input
                     type="tel"
+                    id="phone"
                     placeholder="Your Phone Number"
+                    required
                 >
 
+                <select id="service" required>
+                    <option value="">Select a Service</option>
+                    <option>Social Media Marketing</option>
+                    <option>SEO Services</option>
+                    <option>Website Development</option>
+                    <option>Paid Advertising</option>
+                    <option>Content Marketing</option>
+                    <option>Branding & Design</option>
+                    <option>Other</option>
+                </select>
+
                 <textarea
+                    id="message"
                     placeholder="Tell us about your business"
                     required
                 ></textarea>
 
                 <button type="submit">
-                    Send Message
+                    Send Enquiry on WhatsApp 💬
                 </button>
 
             </form>
@@ -665,18 +609,54 @@
 
         <h3>PRIME Digital Solutions</h3>
 
-        <p>
-            Your Partner in Digital Growth 🚀
-        </p>
+        <p>Your Partner in Digital Growth 🚀</p>
 
         <br>
 
         <p>
-            © 2026 PRIME Digital Solutions. All Rights Reserved.
+            📱 WhatsApp: +91 8699326535
+            <br>
+            📧 kashishbassi500@gmail.com
         </p>
+
+        <br>
+
+        <p>© 2026 PRIME Digital Solutions. All Rights Reserved.</p>
 
     </footer>
 
+
+    <!-- WHATSAPP FORM SCRIPT -->
+
+    <script>
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const service = document.getElementById("service").value;
+            const message = document.getElementById("message").value;
+
+            const whatsappMessage =
+                "Hello PRIME Digital Solutions!%0A%0A" +
+                "*New Website Enquiry* 🚀%0A%0A" +
+                "*Name:* " + encodeURIComponent(name) + "%0A" +
+                "*Email:* " + encodeURIComponent(email) + "%0A" +
+                "*Phone:* " + encodeURIComponent(phone) + "%0A" +
+                "*Service Required:* " + encodeURIComponent(service) + "%0A%0A" +
+                "*Message:* " + encodeURIComponent(message);
+
+            const whatsappURL =
+                "https://wa.me/918699326535?text=" + whatsappMessage;
+
+            window.open(whatsappURL, "_blank");
+
+        });
+
+    </script>
 
 </body>
 </html>
