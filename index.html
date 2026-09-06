@@ -2,10 +2,16 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+        content="PRIME Digital Solutions provides digital marketing, SEO, website development, branding, content marketing and online business growth solutions.">
+
     <title>PRIME Digital Solutions | Smart Digital Growth</title>
+
 
     <style>
 
@@ -20,46 +26,60 @@
             font-family: Arial, sans-serif;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
-            background: #f8fafc;
-            color: #1e293b;
-            line-height: 1.6;
+            background: #ffffff;
+            color: #1f2937;
+            line-height: 1.7;
+            overflow-x: hidden;
         }
 
-        section {
-            padding: 80px 8%;
+
+        a {
+            text-decoration: none;
         }
+
 
         /* =========================================
-           NAVIGATION
+           NAVIGATION BAR
         ========================================= */
 
         nav {
-            background: #071a33;
+            width: 100%;
+            background: #111827;
             color: white;
+
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
+
             padding: 16px 8%;
+
             position: sticky;
             top: 0;
+
             z-index: 1000;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
         }
 
+
         .logo {
-            font-size: 22px;
+            font-size: 23px;
             font-weight: bold;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
         }
+
 
         .logo span {
             color: #38bdf8;
         }
+
 
         nav ul {
             display: flex;
@@ -67,560 +87,954 @@
             gap: 25px;
         }
 
+
         nav ul li a {
             color: white;
-            text-decoration: none;
-            font-size: 14px;
+            font-size: 15px;
             transition: 0.3s;
         }
+
 
         nav ul li a:hover {
             color: #38bdf8;
         }
 
-        .nav-button {
-            background: #2196f3;
-            padding: 10px 20px;
-            border-radius: 25px;
-            color: white !important;
-        }
 
         /* =========================================
            HERO SECTION
         ========================================= */
 
         .hero {
-            min-height: 88vh;
-            background:
-                linear-gradient(
-                    90deg,
-                    rgba(5, 20, 45, 0.97),
-                    rgba(10, 40, 80, 0.82)
-                );
-            color: white;
+
+            min-height: 92vh;
 
             display: flex;
             align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
             padding: 70px 10%;
+
+            background:
+                radial-gradient(circle at top right, rgba(56, 189, 248, 0.18), transparent 35%),
+                linear-gradient(135deg, #111827, #172554, #1e3a8a);
+
+            color: white;
+
+            position: relative;
         }
+
 
         .hero-content {
-            max-width: 750px;
+            max-width: 900px;
         }
+
 
         .hero-badge {
+
             display: inline-block;
+
             background: rgba(56, 189, 248, 0.15);
-            border: 1px solid #38bdf8;
-            color: #38bdf8;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 12px;
-            margin-bottom: 20px;
+
+            border: 1px solid rgba(56, 189, 248, 0.4);
+
+            color: #7dd3fc;
+
+            padding: 8px 18px;
+
+            border-radius: 30px;
+
+            font-size: 14px;
+
+            margin-bottom: 25px;
         }
 
+
         .hero h1 {
+
             font-size: 58px;
-            line-height: 1.15;
-            margin-bottom: 20px;
+
+            line-height: 1.2;
+
+            margin-bottom: 25px;
         }
+
 
         .hero h1 span {
             color: #38bdf8;
         }
 
+
         .hero p {
-            color: #cbd5e1;
-            font-size: 18px;
-            max-width: 650px;
-            margin-bottom: 30px;
+
+            max-width: 750px;
+
+            margin: auto;
+
+            font-size: 19px;
+
+            color: #dbeafe;
+
+            margin-bottom: 35px;
         }
+
 
         .hero-buttons {
+
             display: flex;
-            gap: 15px;
+
+            justify-content: center;
+
             flex-wrap: wrap;
+
+            gap: 15px;
         }
+
 
         .btn {
+
             display: inline-block;
-            padding: 14px 25px;
+
+            padding: 14px 28px;
+
             border-radius: 30px;
-            text-decoration: none;
+
             font-weight: bold;
+
             transition: 0.3s;
+
+            cursor: pointer;
         }
+
 
         .btn-primary {
+
             background: #38bdf8;
-            color: #071a33;
+
+            color: #111827;
         }
 
+
         .btn-primary:hover {
+
             background: white;
+
             transform: translateY(-3px);
         }
 
-        .btn-outline {
-            border: 1px solid #38bdf8;
+
+        .btn-secondary {
+
+            border: 2px solid #38bdf8;
+
             color: white;
         }
 
-        .btn-outline:hover {
+
+        .btn-secondary:hover {
+
             background: #38bdf8;
-            color: #071a33;
+
+            color: #111827;
+
+            transform: translateY(-3px);
         }
+
 
         /* =========================================
-           SECTION TITLES
+           GENERAL SECTION
         ========================================= */
 
-        .section-heading {
-            text-align: center;
-            margin-bottom: 50px;
+        section {
+
+            padding: 90px 10%;
         }
 
-        .section-tag {
-            display: inline-block;
-            background: #e0f2fe;
-            color: #0284c7;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: bold;
+
+        .section-title {
+
+            text-align: center;
+
+            max-width: 800px;
+
+            margin: auto;
+
+            margin-bottom: 55px;
+        }
+
+
+        .section-title h2 {
+
+            font-size: 40px;
+
+            color: #111827;
+
             margin-bottom: 12px;
         }
 
-        .section-heading h2 {
-            font-size: 38px;
-            color: #0f172a;
+
+        .section-title p {
+
+            color: #64748b;
+
+            font-size: 17px;
         }
 
-        .section-heading p {
-            color: #64748b;
-            margin-top: 10px;
-        }
 
         /* =========================================
            ABOUT COMPANY
         ========================================= */
 
         .about {
-            background: white;
+
+            background: #f8fafc;
         }
 
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
 
-        .about-text h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #0f172a;
-        }
+        .about-content {
 
-        .about-text p {
-            color: #475569;
-            margin-bottom: 18px;
-            font-size: 16px;
-        }
+            max-width: 1000px;
 
-        .features {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin-top: 25px;
-        }
+            margin: auto;
 
-        .feature-box {
-            background: #f1f5f9;
-            padding: 20px;
-            border-radius: 12px;
-        }
-
-        .feature-box h4 {
-            color: #0369a1;
-            margin-bottom: 7px;
-        }
-
-        .about-image {
-            background: linear-gradient(135deg, #0f172a, #1e3a8a);
-            min-height: 350px;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            padding: 40px;
             text-align: center;
         }
 
-        .about-image h3 {
-            font-size: 30px;
+
+        .about-content p {
+
+            font-size: 17px;
+
+            color: #475569;
+
+            margin-bottom: 20px;
         }
+
+
+        .about-highlight {
+
+            margin-top: 35px;
+
+            padding: 30px;
+
+            background: white;
+
+            border-radius: 15px;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+        }
+
+
+        .about-highlight h3 {
+
+            color: #1e3a8a;
+
+            margin-bottom: 15px;
+
+            font-size: 24px;
+        }
+
+
+        /* =========================================
+           SERVICES
+        ========================================= */
+
+        .services-container {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+            gap: 25px;
+        }
+
+
+        .service-card {
+
+            background: white;
+
+            padding: 32px 28px;
+
+            border-radius: 18px;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+            transition: 0.3s;
+
+            border: 1px solid #eef2f7;
+        }
+
+
+        .service-card:hover {
+
+            transform: translateY(-10px);
+
+            box-shadow: 0 15px 35px rgba(30, 58, 138, 0.15);
+        }
+
+
+        .service-icon {
+
+            font-size: 42px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .service-card h3 {
+
+            color: #1e3a8a;
+
+            margin-bottom: 12px;
+
+            font-size: 21px;
+        }
+
+
+        .service-card p {
+
+            color: #64748b;
+
+            font-size: 15px;
+        }
+
+
+        /* =========================================
+           OUR APPROACH
+        ========================================= */
+
+        .approach-section {
+
+            background: #f8fafc;
+        }
+
+
+        .approach-container {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
+            gap: 25px;
+        }
+
+
+        .approach-card {
+
+            background: white;
+
+            padding: 32px 25px;
+
+            border-radius: 18px;
+
+            text-align: center;
+
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+
+            transition: 0.3s;
+        }
+
+
+        .approach-card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .approach-icon {
+
+            font-size: 42px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .approach-card h3 {
+
+            color: #1e3a8a;
+
+            margin-bottom: 12px;
+
+            font-size: 20px;
+        }
+
+
+        .approach-card p {
+
+            color: #64748b;
+
+            font-size: 15px;
+        }
+
 
         /* =========================================
            FOUNDER SECTION
         ========================================= */
 
         .founder {
-            background: #f1f5f9;
+
+            background:
+                linear-gradient(135deg, #111827, #172554);
+
+            color: white;
         }
+
+
+        .founder .section-title h2 {
+
+            color: white;
+        }
+
+
+        .founder .section-title p {
+
+            color: #cbd5e1;
+        }
+
 
         .founder-container {
-            display: grid;
-            grid-template-columns: 380px 1fr;
-            gap: 60px;
-            align-items: center;
-            max-width: 1200px;
+
+            max-width: 1150px;
+
             margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 350px 1fr;
+
+            gap: 60px;
+
+            align-items: center;
         }
+
+
+        .founder-image {
+
+            text-align: center;
+        }
+
 
         .founder-image img {
+
             width: 100%;
-            height: 480px;
+
+            max-width: 330px;
+
+            height: 430px;
+
             object-fit: cover;
+
             object-position: center;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+
+            border-radius: 25px;
+
+            border: 5px solid rgba(56, 189, 248, 0.5);
+
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
         }
 
-        .founder-content h2 {
-            font-size: 38px;
-            color: #0f172a;
-            margin-bottom: 10px;
-        }
 
         .founder-content h3 {
-            color: #0284c7;
-            font-size: 24px;
-            margin-bottom: 20px;
+
+            font-size: 32px;
+
+            color: #38bdf8;
+
+            margin-bottom: 5px;
         }
+
+
+        .founder-role {
+
+            color: #cbd5e1;
+
+            margin-bottom: 25px;
+
+            font-size: 17px;
+        }
+
 
         .founder-content p {
-            color: #475569;
-            margin-bottom: 16px;
+
+            color: #e2e8f0;
+
+            margin-bottom: 18px;
+
+            font-size: 16px;
         }
 
-        .quote {
-            border-left: 4px solid #38bdf8;
-            padding: 20px;
-            background: white;
+
+        .founder-quote {
+
             margin-top: 25px;
-            border-radius: 8px;
+
+            padding: 25px;
+
+            border-left: 4px solid #38bdf8;
+
+            background: rgba(255, 255, 255, 0.06);
+
+            border-radius: 10px;
+
             font-style: italic;
-            color: #1e3a8a;
-            font-weight: bold;
+
+            color: #bae6fd;
         }
 
-        /* =========================================
-           SERVICES
-        ========================================= */
-
-        .services {
-            background: white;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 22px;
-        }
-
-        .service-card {
-            background: #ffffff;
-            padding: 28px;
-            border-radius: 16px;
-            border: 1px solid #e2e8f0;
-            transition: 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-            border-color: #38bdf8;
-        }
-
-        .service-icon {
-            font-size: 35px;
-            margin-bottom: 15px;
-        }
-
-        .service-card h3 {
-            color: #0f172a;
-            margin-bottom: 10px;
-        }
-
-        .service-card p {
-            color: #64748b;
-            font-size: 14px;
-        }
 
         /* =========================================
            WHY CHOOSE US
         ========================================= */
 
         .why {
-            background: #071a33;
-            color: white;
-        }
 
-        .why .section-heading h2 {
-            color: white;
-        }
-
-        .why .section-heading p {
-            color: #cbd5e1;
-        }
-
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .why-card {
-            background: #102a4c;
-            padding: 28px;
-            border-radius: 15px;
-        }
-
-        .why-card h3 {
-            color: #38bdf8;
-            margin-bottom: 12px;
-        }
-
-        .why-card p {
-            color: #cbd5e1;
-            font-size: 14px;
-        }
-
-        /* =========================================
-           STATISTICS
-        ========================================= */
-
-        .stats {
-            background: #eaf6ff;
-            padding: 60px 8%;
-        }
-
-        .stats-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            text-align: center;
-        }
-
-        .stat-box h2 {
-            font-size: 40px;
-            color: #0284c7;
-        }
-
-        .stat-box p {
-            color: #475569;
-        }
-
-        /* =========================================
-           PORTFOLIO
-        ========================================= */
-
-        .portfolio {
             background: white;
         }
 
-        .portfolio-grid {
+
+        .why-container {
+
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
             gap: 25px;
         }
 
-        .portfolio-card {
-            background: linear-gradient(135deg, #0f172a, #1e3a8a);
-            color: white;
-            min-height: 220px;
+
+        .why-card {
+
             padding: 30px;
+
             border-radius: 16px;
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
+
+            background: #f8fafc;
+
+            text-align: center;
+
             transition: 0.3s;
         }
 
-        .portfolio-card:hover {
-            transform: scale(1.03);
+
+        .why-card:hover {
+
+            background: #e0f2fe;
+
+            transform: translateY(-7px);
         }
 
-        .portfolio-card h3 {
-            color: #38bdf8;
-        }
 
-        /* =========================================
-           TESTIMONIALS
-        ========================================= */
+        .why-card h3 {
 
-        .testimonials {
-            background: #f1f5f9;
-        }
+            color: #1e3a8a;
 
-        .testimonial-box {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-        }
-
-        .testimonial-box p {
-            font-size: 18px;
-            color: #475569;
-            font-style: italic;
-        }
-
-        .testimonial-box h4 {
-            margin-top: 20px;
-            color: #0284c7;
-        }
-
-        .stars {
-            color: #f59e0b;
-            margin-top: 10px;
-        }
-
-        /* =========================================
-           CONTACT SECTION
-        ========================================= */
-
-        .contact {
-            background: white;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            gap: 50px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .contact-info {
-            background: #071a33;
-            color: white;
-            padding: 40px;
-            border-radius: 20px;
-        }
-
-        .contact-info h3 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        .contact-info p {
-            color: #cbd5e1;
-            margin-bottom: 25px;
-        }
-
-        .contact-link {
-            display: block;
-            padding: 14px;
-            background: #102a4c;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
             margin-bottom: 12px;
         }
 
-        .contact-link:hover {
-            background: #0284c7;
-        }
 
-        .contact-form {
-            background: #f8fafc;
-            padding: 35px;
-            border-radius: 20px;
-        }
+        .why-card p {
 
-        input,
-        textarea {
-            width: 100%;
-            padding: 14px;
-            margin-bottom: 16px;
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
+            color: #64748b;
+
             font-size: 15px;
         }
 
-        textarea {
-            height: 130px;
-            resize: vertical;
+
+        /* =========================================
+           PORTFOLIO / SOLUTIONS
+        ========================================= */
+
+        .portfolio {
+
+            background: #f8fafc;
         }
 
-        .services-selection {
-            margin-bottom: 20px;
-        }
 
-        .services-selection h4 {
-            margin-bottom: 12px;
-            color: #0f172a;
-        }
+        .portfolio-container {
 
-        .checkbox-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+            gap: 25px;
         }
 
-        .checkbox-item {
+
+        .portfolio-card {
+
             background: white;
-            padding: 10px;
-            border-radius: 7px;
-            border: 1px solid #e2e8f0;
-            font-size: 13px;
-            cursor: pointer;
-        }
 
-        .checkbox-item input {
-            width: auto;
-            margin-right: 7px;
-            margin-bottom: 0;
-        }
+            padding: 40px 25px;
 
-        .submit-btn {
-            width: 100%;
-            padding: 15px;
-            background: #25D366;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
+            text-align: center;
+
+            border-radius: 18px;
+
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+
             transition: 0.3s;
         }
 
-        .submit-btn:hover {
-            background: #1ebd5a;
+
+        .portfolio-card:hover {
+
+            transform: translateY(-8px);
+
+            background: #111827;
+
+            color: white;
         }
+
+
+        .portfolio-card .portfolio-icon {
+
+            font-size: 45px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .portfolio-card h3 {
+
+            margin-bottom: 10px;
+
+            color: #1e3a8a;
+        }
+
+
+        .portfolio-card:hover h3 {
+
+            color: #38bdf8;
+        }
+
+
+        .portfolio-card p {
+
+            color: #64748b;
+        }
+
+
+        .portfolio-card:hover p {
+
+            color: #e2e8f0;
+        }
+
+
+        /* =========================================
+           CONTACT
+        ========================================= */
+
+        .contact {
+
+            background: white;
+        }
+
+
+        .contact-wrapper {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1.3fr;
+
+            gap: 50px;
+        }
+
+
+        .contact-info {
+
+            background: #111827;
+
+            color: white;
+
+            padding: 40px;
+
+            border-radius: 20px;
+        }
+
+
+        .contact-info h3 {
+
+            font-size: 28px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .contact-info p {
+
+            color: #cbd5e1;
+
+            margin-bottom: 30px;
+        }
+
+
+        .contact-method {
+
+            margin-bottom: 25px;
+        }
+
+
+        .contact-method h4 {
+
+            color: #38bdf8;
+
+            margin-bottom: 5px;
+        }
+
+
+        .contact-method a {
+
+            color: white;
+
+            word-break: break-word;
+        }
+
+
+        .contact-form {
+
+            padding: 35px;
+
+            border-radius: 20px;
+
+            background: #f8fafc;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+        }
+
+
+        form {
+
+            display: flex;
+
+            flex-direction: column;
+        }
+
+
+        input,
+        textarea,
+        select {
+
+            width: 100%;
+
+            padding: 15px;
+
+            margin-bottom: 18px;
+
+            border: 1px solid #dbe3ec;
+
+            border-radius: 10px;
+
+            font-size: 15px;
+
+            background: white;
+
+            outline: none;
+
+            transition: 0.3s;
+        }
+
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+
+            border-color: #38bdf8;
+
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+        }
+
+
+        select {
+
+            height: 170px;
+        }
+
+
+        textarea {
+
+            height: 140px;
+
+            resize: vertical;
+        }
+
+
+        .select-note {
+
+            font-size: 13px;
+
+            color: #64748b;
+
+            margin-top: -12px;
+
+            margin-bottom: 18px;
+        }
+
+
+        button {
+
+            padding: 16px;
+
+            background: #1e3a8a;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 10px;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+
+        button:hover {
+
+            background: #38bdf8;
+
+            color: #111827;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================================
+           CTA SECTION
+        ========================================= */
+
+        .cta {
+
+            text-align: center;
+
+            background:
+                linear-gradient(135deg, #1e3a8a, #111827);
+
+            color: white;
+        }
+
+
+        .cta h2 {
+
+            font-size: 38px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .cta p {
+
+            color: #dbeafe;
+
+            max-width: 700px;
+
+            margin: auto;
+
+            margin-bottom: 30px;
+        }
+
 
         /* =========================================
            FOOTER
         ========================================= */
 
         footer {
-            background: #071a33;
+
+            background: #020617;
+
             color: white;
-            padding: 35px 8%;
+
             text-align: center;
+
+            padding: 35px 10%;
         }
 
-        footer p {
-            color: #94a3b8;
-            margin-top: 10px;
+
+        footer h3 {
+
+            color: #38bdf8;
+
+            margin-bottom: 10px;
         }
+
+
+        footer p {
+
+            color: #94a3b8;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =========================================
+           BACK TO TOP BUTTON
+        ========================================= */
+
+        #backToTop {
+
+            position: fixed;
+
+            bottom: 25px;
+
+            right: 25px;
+
+            width: 48px;
+
+            height: 48px;
+
+            border-radius: 50%;
+
+            background: #38bdf8;
+
+            color: #111827;
+
+            display: none;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 20px;
+
+            border: none;
+
+            cursor: pointer;
+
+            z-index: 999;
+        }
+
+
+        /* =========================================
+           ANIMATION
+        ========================================= */
+
+        .reveal {
+
+            opacity: 0;
+
+            transform: translateY(30px);
+
+            transition: all 0.8s ease;
+        }
+
+
+        .reveal.active {
+
+            opacity: 1;
+
+            transform: translateY(0);
+        }
+
 
         /* =========================================
            MOBILE RESPONSIVE
@@ -628,66 +1042,84 @@
 
         @media (max-width: 900px) {
 
-            nav {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav ul {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 12px;
-            }
-
-            .hero h1 {
-                font-size: 42px;
-            }
-
-            .about-grid,
             .founder-container,
-            .contact-grid {
+            .contact-wrapper {
+
                 grid-template-columns: 1fr;
+
+                text-align: center;
             }
 
-            .founder-container {
-                max-width: 600px;
+
+            .founder-image {
+
+                order: -1;
             }
 
-            .founder-image img {
-                height: 450px;
-            }
 
-            .stats-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .contact-info {
 
-            .portfolio-grid {
-                grid-template-columns: 1fr;
+                text-align: center;
             }
 
         }
 
-        @media (max-width: 600px) {
 
-            section {
-                padding: 60px 6%;
+        @media (max-width: 768px) {
+
+            nav {
+
+                flex-direction: column;
+
+                gap: 15px;
+
+                padding: 18px 5%;
             }
+
+
+            nav ul {
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 12px;
+            }
+
 
             .hero {
-                padding: 60px 7%;
+
+                padding: 80px 7%;
             }
+
 
             .hero h1 {
-                font-size: 34px;
+
+                font-size: 40px;
             }
 
-            .section-heading h2 {
+
+            .hero p {
+
+                font-size: 16px;
+            }
+
+
+            section {
+
+                padding: 65px 7%;
+            }
+
+
+            .section-title h2 {
+
+                font-size: 31px;
+            }
+
+
+            .cta h2 {
+
                 font-size: 30px;
-            }
-
-            .features,
-            .checkbox-grid {
-                grid-template-columns: 1fr;
             }
 
         }
@@ -707,19 +1139,28 @@
     <nav>
 
         <div class="logo">
+
             PRIME <span>Digital Solutions</span>
+
         </div>
 
+
         <ul>
+
             <li><a href="#home">Home</a></li>
+
             <li><a href="#about">About</a></li>
-            <li><a href="#founder">Founder</a></li>
+
             <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+
+            <li><a href="#founder">Founder</a></li>
+
             <li><a href="#contact">Contact</a></li>
+
         </ul>
 
     </nav>
+
 
 
     <!-- =========================================
@@ -731,31 +1172,42 @@
         <div class="hero-content">
 
             <div class="hero-badge">
-                YOUR PARTNER IN DIGITAL GROWTH
+
+                🚀 Smart Digital Solutions for Growing Businesses
+
             </div>
 
+
             <h1>
-                Grow Your Business With
-                <span>Smart Digital Marketing</span>
+
+                Build Your Brand.
+
+                <span>Grow Your Business Online.</span>
+
             </h1>
 
+
             <p>
-                PRIME Digital Solutions helps businesses build a strong online
-                presence, attract the right audience and achieve sustainable
-                growth through creative strategies and data-driven solutions.
+
+                PRIME Digital Solutions helps businesses build a professional
+                digital presence through strategic marketing, SEO, website
+                development, branding and creative digital solutions.
+
             </p>
+
 
             <div class="hero-buttons">
 
-                <a href="#services" class="btn btn-primary">
-                    Explore Our Services →
+                <a href="#contact" class="btn btn-primary">
+
+                    Start Your Digital Journey
+
                 </a>
 
-                <a href="https://wa.me/918699326535"
-                   class="btn btn-outline"
-                   target="_blank">
 
-                    💬 Chat on WhatsApp
+                <a href="#services" class="btn btn-secondary">
+
+                    Explore Services
 
                 </a>
 
@@ -764,95 +1216,81 @@
         </div>
 
     </section>
+
 
 
     <!-- =========================================
          ABOUT COMPANY
     ========================================= -->
 
-    <section class="about" id="about">
+    <section class="about reveal" id="about">
 
-        <div class="about-grid">
+        <div class="section-title">
 
-            <div class="about-text">
+            <h2>About PRIME Digital Solutions</h2>
 
-                <span class="section-tag">
-                    ABOUT US
-                </span>
+            <p>
 
-                <h2>
-                    About PRIME Digital Solutions
-                </h2>
+                Combining creativity, strategy and business understanding
+                to build meaningful digital experiences.
+
+            </p>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p>
+
+                PRIME Digital Solutions is a growing digital solutions company
+                focused on helping businesses establish a strong, professional
+                and effective presence in the digital world.
+
+            </p>
+
+
+            <p>
+
+                In today's competitive environment, having a website or social
+                media account is not always enough. Businesses need a clear
+                strategy, professional branding, meaningful content and the
+                right digital tools to connect with their customers.
+
+            </p>
+
+
+            <p>
+
+                At PRIME Digital Solutions, we focus on understanding the
+                business behind the brand. Our approach is centred around
+                identifying business goals and developing practical digital
+                solutions that support long-term growth.
+
+            </p>
+
+
+            <p>
+
+                From building professional websites and improving search engine
+                visibility to creating engaging content, graphics and digital
+                marketing strategies, our objective is to help businesses
+                communicate more effectively in the online world.
+
+            </p>
+
+
+            <div class="about-highlight">
+
+                <h3>More Than Just an Online Presence</h3>
 
                 <p>
-                    PRIME Digital Solutions is a professional digital solutions
-                    company focused on helping businesses build, strengthen and
-                    grow their presence in the digital world.
+
+                    We believe that digital growth requires a combination of
+                    creativity, strategy, customer understanding, research,
+                    data-driven thinking and continuous improvement.
+
                 </p>
-
-                <p>
-                    We understand that every business is different. That is why
-                    we focus on understanding your business goals, target
-                    audience and market before developing strategies that support
-                    meaningful and sustainable growth.
-                </p>
-
-                <p>
-                    Our services include digital marketing, social media
-                    marketing, search engine optimization, website development,
-                    paid advertising, branding, graphic design, content creation
-                    and online business promotion.
-                </p>
-
-                <p>
-                    At PRIME Digital Solutions, we believe that a successful
-                    digital presence requires more than simply being online. It
-                    requires strategy, creativity, research, customer
-                    understanding and continuous improvement.
-                </p>
-
-
-                <div class="features">
-
-                    <div class="feature-box">
-                        <h4>💡 Creative Strategies</h4>
-                        <p>Unique ideas designed around your business.</p>
-                    </div>
-
-                    <div class="feature-box">
-                        <h4>📊 Data-Driven</h4>
-                        <p>Smart decisions focused on measurable growth.</p>
-                    </div>
-
-                    <div class="feature-box">
-                        <h4>🤝 Transparent</h4>
-                        <p>Clear communication throughout every project.</p>
-                    </div>
-
-                    <div class="feature-box">
-                        <h4>🚀 Growth Focused</h4>
-                        <p>Your business success remains our priority.</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="about-image">
-
-                <div>
-
-                    <h3>
-                        More Than Marketing.
-                    </h3>
-
-                    <p>
-                        Smart Strategies. Strong Brands.
-                        Sustainable Digital Growth. 🚀
-                    </p>
-
-                </div>
 
             </div>
 
@@ -860,128 +1298,28 @@
 
     </section>
 
-
-    <!-- =========================================
-         FOUNDER
-    ========================================= -->
-
-    <section class="founder" id="founder">
-
-        <div class="founder-container">
-
-
-            <div class="founder-image">
-
-                <!-- Upload your photo to GitHub as founder.jpg -->
-
-                <img src="founder.jpg"
-                     alt="Kashish Bassi - Founder of PRIME Digital Solutions">
-
-            </div>
-
-
-            <div class="founder-content">
-
-                <span class="section-tag">
-                    FOUNDER & CEO
-                </span>
-
-                <h2>
-                    Kashish Bassi
-                </h2>
-
-                <h3>
-                    Where Business Expertise Meets Digital Growth
-                </h3>
-
-
-                <p>
-                    Kashish Bassi is the founder of PRIME Digital Solutions, a
-                    digital solutions company focused on helping businesses build
-                    a strong online presence and achieve sustainable growth.
-                </p>
-
-
-                <p>
-                    With experience across Finance, Credit, Accounting and
-                    Digital Marketing, Kashish brings a unique combination of
-                    business understanding and digital expertise to every
-                    project.
-                </p>
-
-
-                <p>
-                    This diverse professional background provides a strong
-                    understanding of how businesses operate, manage resources,
-                    serve customers and grow in competitive markets.
-                </p>
-
-
-                <p>
-                    Through professional experience in accounting and credit
-                    operations, Kashish has developed practical knowledge of
-                    financial records, credit processes, data management,
-                    financial analysis and business operations.
-                </p>
-
-
-                <p>
-                    With expertise in Digital Marketing, SEO, Web Design,
-                    Graphic Design, Content Marketing and Online Business
-                    Promotion, Kashish combines creativity with analytical
-                    thinking to develop practical digital strategies.
-                </p>
-
-
-                <div class="quote">
-
-                    “Your business deserves more than just an online presence—
-                    it deserves a digital strategy built for growth.”
-
-                </div>
-
-
-                <p style="margin-top: 25px;">
-
-                    The vision of PRIME Digital Solutions is simple: combine
-                    business knowledge with digital innovation to help businesses
-                    grow, connect with their customers and compete confidently
-                    in the digital world.
-
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </section>
 
 
     <!-- =========================================
          SERVICES
     ========================================= -->
 
-    <section class="services" id="services">
+    <section class="reveal" id="services">
 
-        <div class="section-heading">
+        <div class="section-title">
 
-            <span class="section-tag">
-                OUR SERVICES
-            </span>
-
-            <h2>
-                Services We Offer
-            </h2>
+            <h2>Our Digital Services</h2>
 
             <p>
-                Complete digital solutions designed to support your business growth.
+
+                Practical digital solutions designed around your business needs.
+
             </p>
 
         </div>
 
 
-        <div class="services-grid">
+        <div class="services-container">
 
 
             <div class="service-card">
@@ -991,8 +1329,10 @@
                 <h3>Social Media Marketing</h3>
 
                 <p>
-                    Build your online presence and engage your audience through
-                    effective social media strategies.
+
+                    Build and strengthen your brand presence through engaging
+                    content and effective social media strategies.
+
                 </p>
 
             </div>
@@ -1005,8 +1345,10 @@
                 <h3>SEO Services</h3>
 
                 <p>
-                    Improve your search visibility and attract more organic
-                    traffic to your website.
+
+                    Improve your online visibility and help your website become
+                    easier for potential customers to discover.
+
                 </p>
 
             </div>
@@ -1019,8 +1361,10 @@
                 <h3>Website Development</h3>
 
                 <p>
-                    Modern, professional and responsive websites designed for
-                    your business.
+
+                    Professional, responsive and modern websites designed to
+                    represent your business effectively online.
+
                 </p>
 
             </div>
@@ -1028,13 +1372,15 @@
 
             <div class="service-card">
 
-                <div class="service-icon">📢</div>
+                <div class="service-icon">🎨</div>
 
-                <h3>Paid Advertising</h3>
+                <h3>Graphic Design</h3>
 
                 <p>
-                    Reach the right customers through targeted advertising
-                    campaigns.
+
+                    Creative graphics and visual content that help build a
+                    strong and consistent brand identity.
+
                 </p>
 
             </div>
@@ -1047,8 +1393,10 @@
                 <h3>Content Marketing</h3>
 
                 <p>
-                    Create valuable content that helps your business connect
-                    with customers.
+
+                    Meaningful content designed to communicate your brand
+                    message and engage your target audience.
+
                 </p>
 
             </div>
@@ -1056,41 +1404,15 @@
 
             <div class="service-card">
 
-                <div class="service-icon">🎨</div>
+                <div class="service-icon">📢</div>
 
-                <h3>Branding & Graphic Design</h3>
-
-                <p>
-                    Develop a strong and professional visual identity for your
-                    business.
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="service-icon">📊</div>
-
-                <h3>Analytics & Reporting</h3>
+                <h3>Digital Promotion</h3>
 
                 <p>
-                    Track performance and make better decisions using useful
-                    business insights.
-                </p>
 
-            </div>
+                    Strategic online promotion solutions to help businesses
+                    improve reach and connect with potential customers.
 
-
-            <div class="service-card">
-
-                <div class="service-icon">🚀</div>
-
-                <h3>Digital Growth Strategy</h3>
-
-                <p>
-                    Build a customized strategy focused on long-term digital
-                    business growth.
                 </p>
 
             </div>
@@ -1099,41 +1421,251 @@
         </div>
 
     </section>
+
+
+
+    <!-- =========================================
+         OUR APPROACH
+         REPLACES FALSE STATISTICS
+    ========================================= -->
+
+    <section class="approach-section reveal">
+
+        <div class="section-title">
+
+            <h2>Our Approach to Digital Growth</h2>
+
+            <p>
+
+                Building meaningful digital solutions with strategy,
+                creativity and a focus on business goals.
+
+            </p>
+
+        </div>
+
+
+        <div class="approach-container">
+
+
+            <div class="approach-card">
+
+                <div class="approach-icon">💡</div>
+
+                <h3>Strategy First</h3>
+
+                <p>
+
+                    Every business is unique. We take time to understand your
+                    goals, audience and business requirements before developing
+                    the right digital approach.
+
+                </p>
+
+            </div>
+
+
+            <div class="approach-card">
+
+                <div class="approach-icon">🎯</div>
+
+                <h3>Business-Focused Solutions</h3>
+
+                <p>
+
+                    We believe that digital solutions should support real
+                    business objectives rather than simply creating an online
+                    presence.
+
+                </p>
+
+            </div>
+
+
+            <div class="approach-card">
+
+                <div class="approach-icon">📈</div>
+
+                <h3>Growth-Oriented Mindset</h3>
+
+                <p>
+
+                    As a growing digital solutions company, we are committed to
+                    learning, improving and exploring better ways to help
+                    businesses grow online.
+
+                </p>
+
+            </div>
+
+
+            <div class="approach-card">
+
+                <div class="approach-icon">🤝</div>
+
+                <h3>Personal Attention</h3>
+
+                <p>
+
+                    We value communication and believe every project deserves
+                    dedicated attention and solutions suited to its specific
+                    business needs.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FOUNDER
+    ========================================= -->
+
+    <section class="founder reveal" id="founder">
+
+        <div class="section-title">
+
+            <h2>About the Founder</h2>
+
+            <p>
+
+                Where Business Expertise Meets Digital Growth
+
+            </p>
+
+        </div>
+
+
+        <div class="founder-container">
+
+
+            <!-- IMPORTANT:
+                 Your GitHub image file is named founder.jpg
+            -->
+
+            <div class="founder-image">
+
+                <img src="founder.jpg"
+                    alt="Kashish Bassi - Founder of PRIME Digital Solutions">
+
+            </div>
+
+
+
+            <div class="founder-content">
+
+                <h3>Kashish Bassi</h3>
+
+                <div class="founder-role">
+
+                    Founder | PRIME Digital Solutions
+
+                </div>
+
+
+                <p>
+
+                    Kashish Bassi is the founder of PRIME Digital Solutions,
+                    a digital solutions company focused on helping businesses
+                    build a strong online presence and achieve sustainable
+                    digital growth.
+
+                </p>
+
+
+                <p>
+
+                    With experience across Finance, Credit, Accounting and
+                    Digital Marketing, Kashish brings a unique combination of
+                    business understanding and digital expertise to every
+                    project.
+
+                </p>
+
+
+                <p>
+
+                    This diverse professional background provides valuable
+                    insight into how businesses operate, manage resources,
+                    understand customers and grow in competitive markets.
+
+                </p>
+
+
+                <p>
+
+                    Through experience in accounting and credit operations,
+                    Kashish has developed practical knowledge of financial
+                    processes, data management, financial analysis and
+                    business operations.
+
+                </p>
+
+
+                <p>
+
+                    With expertise in Digital Marketing, SEO, Web Design,
+                    Graphic Design, Content Marketing and Online Business
+                    Promotion, Kashish combines creativity with analytical
+                    thinking to develop practical digital strategies.
+
+                </p>
+
+
+                <div class="founder-quote">
+
+                    “Your business deserves more than just an online
+                    presence—it deserves a digital strategy built for growth.”
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
 
 
     <!-- =========================================
          WHY CHOOSE US
     ========================================= -->
 
-    <section class="why">
+    <section class="why reveal">
 
-        <div class="section-heading">
+        <div class="section-title">
 
-            <span class="section-tag">
-                WHY CHOOSE US
-            </span>
-
-            <h2>
-                Why PRIME?
-            </h2>
+            <h2>Why Work With PRIME?</h2>
 
             <p>
-                Because your business success matters to us.
+
+                A fresh perspective with a strong focus on learning,
+                strategy and meaningful business value.
+
             </p>
 
         </div>
 
 
-        <div class="why-grid">
+        <div class="why-container">
 
 
             <div class="why-card">
 
-                <h3>💡 Creative Strategies</h3>
+                <h3>Creative Thinking</h3>
 
                 <p>
-                    Fresh and practical ideas designed specifically for your
-                    business and audience.
+
+                    Fresh ideas and creative approaches designed around your
+                    brand and business goals.
+
                 </p>
 
             </div>
@@ -1141,11 +1673,13 @@
 
             <div class="why-card">
 
-                <h3>🎯 Result Focused</h3>
+                <h3>Business Understanding</h3>
 
                 <p>
-                    We focus on strategies that support meaningful business
-                    growth and results.
+
+                    Digital solutions developed with an understanding of how
+                    businesses operate and grow.
+
                 </p>
 
             </div>
@@ -1153,11 +1687,13 @@
 
             <div class="why-card">
 
-                <h3>💰 Affordable Solutions</h3>
+                <h3>Continuous Learning</h3>
 
                 <p>
-                    Professional digital services suitable for businesses of
-                    different sizes.
+
+                    We continuously explore new ideas, technologies and digital
+                    strategies to improve our solutions.
+
                 </p>
 
             </div>
@@ -1165,11 +1701,13 @@
 
             <div class="why-card">
 
-                <h3>🤝 Dedicated Support</h3>
+                <h3>Dedicated Support</h3>
 
                 <p>
-                    We work closely with businesses throughout their digital
-                    growth journey.
+
+                    We believe in communication, collaboration and giving
+                    proper attention to every business requirement.
+
                 </p>
 
             </div>
@@ -1180,83 +1718,41 @@
     </section>
 
 
-    <!-- =========================================
-         STATS
-    ========================================= -->
-
-    <section class="stats">
-
-        <div class="stats-container">
-
-            <div class="stat-box">
-
-                <h2>50+</h2>
-                <p>Projects & Solutions</p>
-
-            </div>
-
-
-            <div class="stat-box">
-
-                <h2>30+</h2>
-                <p>Happy Clients</p>
-
-            </div>
-
-
-            <div class="stat-box">
-
-                <h2>5+</h2>
-                <p>Industries Served</p>
-
-            </div>
-
-
-            <div class="stat-box">
-
-                <h2>100%</h2>
-                <p>Commitment to Growth</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
 
     <!-- =========================================
-         PORTFOLIO
+         SOLUTIONS
     ========================================= -->
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio reveal">
 
-        <div class="section-heading">
+        <div class="section-title">
 
-            <span class="section-tag">
-                OUR PORTFOLIO
-            </span>
-
-            <h2>
-                Our Work
-            </h2>
+            <h2>Digital Solutions We Can Build</h2>
 
             <p>
-                Examples of the digital solutions we provide.
+
+                Supporting businesses through creative and professional
+                digital experiences.
+
             </p>
 
         </div>
 
 
-        <div class="portfolio-grid">
+        <div class="portfolio-container">
 
 
             <div class="portfolio-card">
 
-                <h3>Social Media Campaigns</h3>
+                <div class="portfolio-icon">🌐</div>
+
+                <h3>Professional Websites</h3>
 
                 <p>
-                    Creative campaigns designed to increase engagement and
-                    brand awareness.
+
+                    Modern websites designed to represent businesses
+                    professionally online.
+
                 </p>
 
             </div>
@@ -1264,11 +1760,15 @@
 
             <div class="portfolio-card">
 
-                <h3>Website Projects</h3>
+                <div class="portfolio-icon">📲</div>
+
+                <h3>Digital Brand Presence</h3>
 
                 <p>
-                    Professional websites designed to represent businesses
-                    online.
+
+                    Helping businesses build a more consistent and engaging
+                    presence across digital platforms.
+
                 </p>
 
             </div>
@@ -1276,11 +1776,15 @@
 
             <div class="portfolio-card">
 
-                <h3>SEO & Digital Growth</h3>
+                <div class="portfolio-icon">📊</div>
+
+                <h3>Growth Strategies</h3>
 
                 <p>
-                    Strategies focused on improving visibility and attracting
-                    the right audience.
+
+                    Exploring practical digital strategies based on business
+                    objectives and customer needs.
+
                 </p>
 
             </div>
@@ -1290,121 +1794,82 @@
 
     </section>
 
-
-    <!-- =========================================
-         TESTIMONIALS
-    ========================================= -->
-
-    <section class="testimonials">
-
-        <div class="section-heading">
-
-            <span class="section-tag">
-                WHAT CLIENTS SAY
-            </span>
-
-            <h2>
-                Testimonials
-            </h2>
-
-        </div>
-
-
-        <div class="testimonial-box">
-
-            <p id="testimonialText">
-                “PRIME Digital Solutions helped us understand our digital
-                presence and develop a clearer strategy for our business.”
-            </p>
-
-            <h4 id="testimonialName">
-                — Happy Client
-            </h4>
-
-            <div class="stars">
-                ⭐⭐⭐⭐⭐
-            </div>
-
-        </div>
-
-    </section>
 
 
     <!-- =========================================
          CONTACT
     ========================================= -->
 
-    <section class="contact" id="contact">
+    <section class="contact reveal" id="contact">
 
-        <div class="section-heading">
+        <div class="section-title">
 
-            <span class="section-tag">
-                GET IN TOUCH
-            </span>
-
-            <h2>
-                Let's Grow Your Business
-            </h2>
+            <h2>Let's Grow Your Business</h2>
 
             <p>
-                Tell us about your business and the services you are interested in.
+
+                Tell us about your business and the digital services you are
+                interested in.
+
             </p>
 
         </div>
 
 
-        <div class="contact-grid">
+        <div class="contact-wrapper">
 
 
             <!-- CONTACT INFORMATION -->
 
             <div class="contact-info">
 
-                <h3>
-                    Contact Us Directly
-                </h3>
+                <h3>Get In Touch</h3>
 
                 <p>
-                    You can contact PRIME Digital Solutions directly through
-                    WhatsApp or Email.
+
+                    Have a business idea or looking to improve your digital
+                    presence? Let's start the conversation.
+
                 </p>
 
 
-                <a class="contact-link"
-                   href="https://wa.me/918699326535"
-                   target="_blank">
-
-                    💬 Chat on WhatsApp
-
-                </a>
-
-
-                <a class="contact-link"
-                   href="mailto:kashishbassi500@gmail.com">
-
-                    📧 Send Us an Email
-
-                </a>
-
-
-                <div style="margin-top: 30px;">
+                <div class="contact-method">
 
                     <h4>📱 WhatsApp</h4>
 
-                    <p>
-                        +91 8699326535
-                    </p>
+                    <a href="https://wa.me/918699326535" target="_blank">
 
+                        +91 86993 26535
 
-                    <h4>📧 Email</h4>
-
-                    <p>
-                        kashishbassi500@gmail.com
-                    </p>
+                    </a>
 
                 </div>
 
+
+                <div class="contact-method">
+
+                    <h4>📧 Email</h4>
+
+                    <a href="mailto:kashishbassi500@gmail.com">
+
+                        kashishbassi500@gmail.com
+
+                    </a>
+
+                </div>
+
+
+                <a href="https://wa.me/918699326535"
+                    target="_blank"
+                    class="btn btn-primary">
+
+                    Chat on WhatsApp
+
+                </a>
+
+
             </div>
+
 
 
             <!-- CONTACT FORM -->
@@ -1413,147 +1878,75 @@
 
                 <form id="contactForm">
 
+
                     <input
                         type="text"
                         id="name"
-                        placeholder="Your Full Name"
-                        required
-                    >
+                        placeholder="Your Name"
+                        required>
 
 
                     <input
                         type="email"
                         id="email"
                         placeholder="Your Email Address"
-                        required
-                    >
+                        required>
 
 
                     <input
                         type="tel"
                         id="phone"
-                        placeholder="Your Phone Number"
-                        required
-                    >
+                        placeholder="Your Phone Number">
 
 
                     <!-- MULTIPLE SERVICES -->
 
-                    <div class="services-selection">
+                    <select id="servicesSelected" multiple required>
 
-                        <h4>
-                            Select Services You Are Interested In:
-                        </h4>
+                        <option value="Social Media Marketing">
+                            Social Media Marketing
+                        </option>
 
+                        <option value="SEO Services">
+                            SEO Services
+                        </option>
 
-                        <div class="checkbox-grid">
+                        <option value="Website Development">
+                            Website Development
+                        </option>
 
+                        <option value="Graphic Design">
+                            Graphic Design
+                        </option>
 
-                            <label class="checkbox-item">
+                        <option value="Content Marketing">
+                            Content Marketing
+                        </option>
 
-                                <input type="checkbox"
-                                       name="service"
-                                       value="Social Media Marketing">
+                        <option value="Digital Promotion">
+                            Digital Promotion
+                        </option>
 
-                                Social Media Marketing
-
-                            </label>
-
-
-                            <label class="checkbox-item">
-
-                                <input type="checkbox"
-                                       name="service"
-                                       value="SEO Services">
-
-                                SEO Services
-
-                            </label>
+                    </select>
 
 
-                            <label class="checkbox-item">
+                    <p class="select-note">
 
-                                <input type="checkbox"
-                                       name="service"
-                                       value="Website Development">
+                        Hold <b>Ctrl</b> (Windows) or <b>Command</b> (Mac)
+                        to select more than one service.
 
-                                Website Development
-
-                            </label>
-
-
-                            <label class="checkbox-item">
-
-                                <input type="checkbox"
-                                       name="service"
-                                       value="Paid Advertising">
-
-                                Paid Advertising
-
-                            </label>
-
-
-                            <label class="checkbox-item">
-
-                                <input type="checkbox"
-                                       name="service"
-                                       value="Content Marketing">
-
-                                Content Marketing
-
-                            </label>
-
-
-                            <label class="checkbox-item">
-
-                                <input type="checkbox"
-                                       name="service"
-                                       value="Branding & Graphic Design">
-
-                                Branding & Graphic Design
-
-                            </label>
-
-
-                            <label class="checkbox-item">
-
-                                <input type="checkbox"
-                                       name="service"
-                                       value="Digital Growth Strategy">
-
-                                Digital Growth Strategy
-
-                            </label>
-
-
-                            <label class="checkbox-item">
-
-                                <input type="checkbox"
-                                       name="service"
-                                       value="Analytics & Reporting">
-
-                                Analytics & Reporting
-
-                            </label>
-
-
-                        </div>
-
-                    </div>
+                    </p>
 
 
                     <textarea
                         id="message"
                         placeholder="Tell us about your business and requirements"
-                        required
-                    ></textarea>
+                        required></textarea>
 
 
-                    <button
-                        type="submit"
-                        class="submit-btn">
+                    <button type="submit">
 
-                        💬 Send Enquiry on WhatsApp
+                        Send Enquiry on WhatsApp 🚀
 
                     </button>
 
@@ -1568,30 +1961,73 @@
     </section>
 
 
+
+    <!-- =========================================
+         CALL TO ACTION
+    ========================================= -->
+
+    <section class="cta reveal">
+
+        <h2>Ready to Build Your Digital Presence?</h2>
+
+        <p>
+
+            Let's discuss your business goals and explore how the right
+            digital strategy can support your growth.
+
+        </p>
+
+
+        <a href="#contact" class="btn btn-primary">
+
+            Get Started Today
+
+        </a>
+
+    </section>
+
+
+
     <!-- =========================================
          FOOTER
     ========================================= -->
 
     <footer>
 
-        <h2>
-            PRIME Digital Solutions
-        </h2>
+        <h3>PRIME Digital Solutions</h3>
 
         <p>
-            Smart Strategies. Strong Brands. Digital Growth. 🚀
+
+            Smart Digital Solutions for Growing Businesses 🚀
+
         </p>
 
         <p>
-            📱 +91 8699326535 |
-            📧 kashishbassi500@gmail.com
+
+            Founder: Kashish Bassi
+
         </p>
 
+        <br>
+
         <p>
+
             © 2026 PRIME Digital Solutions. All Rights Reserved.
+
         </p>
 
     </footer>
+
+
+
+    <!-- BACK TO TOP -->
+
+    <button id="backToTop" onclick="scrollToTop()">
+
+        ↑
+
+    </button>
+
 
 
     <!-- =========================================
@@ -1600,9 +2036,8 @@
 
     <script>
 
-        /* =========================================
-           WHATSAPP FORM
-        ========================================= */
+
+        /* CONTACT FORM - WHATSAPP */
 
         document.getElementById("contactForm").addEventListener(
             "submit",
@@ -1611,150 +2046,152 @@
                 event.preventDefault();
 
 
-                let name =
+                const name =
                     document.getElementById("name").value;
 
-                let email =
+
+                const email =
                     document.getElementById("email").value;
 
-                let phone =
+
+                const phone =
                     document.getElementById("phone").value;
 
-                let message =
+
+                const message =
                     document.getElementById("message").value;
 
 
-                /* GET MULTIPLE SELECTED SERVICES */
+                const servicesSelect =
+                    document.getElementById("servicesSelected");
+
 
                 let selectedServices = [];
 
-                let services =
-                    document.querySelectorAll(
-                        'input[name="service"]:checked'
-                    );
 
+                for (let option of servicesSelect.options) {
 
-                services.forEach(function(service) {
+                    if (option.selected) {
 
-                    selectedServices.push(
-                        service.value
-                    );
+                        selectedServices.push(option.value);
 
-                });
-
-
-                if (selectedServices.length === 0) {
-
-                    alert(
-                        "Please select at least one service."
-                    );
-
-                    return;
+                    }
 
                 }
 
 
-                let whatsappMessage =
+                const whatsappMessage =
 
-                    "Hello PRIME Digital Solutions!%0A%0A" +
+                    "Hello PRIME Digital Solutions! 👋\n\n" +
 
-                    "*New Business Enquiry*%0A%0A" +
+                    "I would like to make an enquiry.\n\n" +
 
-                    "*Name:* " + name + "%0A" +
+                    "👤 Name: " + name + "\n" +
 
-                    "*Email:* " + email + "%0A" +
+                    "📧 Email: " + email + "\n" +
 
-                    "*Phone:* " + phone + "%0A%0A" +
+                    "📱 Phone: " + phone + "\n\n" +
 
-                    "*Services Interested In:*%0A" +
+                    "🛠 Services Interested In:\n" +
 
                     selectedServices.join(", ") +
 
-                    "%0A%0A" +
+                    "\n\n" +
 
-                    "*Business Requirements:*%0A" +
+                    "💬 Business Requirements:\n" +
 
                     message;
 
 
-                let whatsappURL =
+                const whatsappURL =
 
                     "https://wa.me/918699326535?text=" +
 
-                    whatsappMessage;
+                    encodeURIComponent(whatsappMessage);
 
 
-                window.open(
-                    whatsappURL,
-                    "_blank"
-                );
+                window.open(whatsappURL, "_blank");
 
             }
         );
 
 
-        /* =========================================
-           TESTIMONIAL SLIDER
-        ========================================= */
 
-        const testimonials = [
+        /* BACK TO TOP BUTTON */
 
-            {
-                text:
-                "“PRIME Digital Solutions helped us understand our digital presence and develop a clearer strategy for our business.”",
+        window.addEventListener("scroll", function() {
 
-                name:
-                "— Happy Client"
-            },
-
-            {
-                text:
-                "“Professional communication, creative ideas and a strong understanding of business requirements.”",
-
-                name:
-                "— Business Owner"
-            },
-
-            {
-                text:
-                "“A great combination of creativity and strategy. The approach was practical and focused on growth.”",
-
-                name:
-                "— Client Feedback"
-            }
-
-        ];
+            const button =
+                document.getElementById("backToTop");
 
 
-        let testimonialIndex = 0;
+            if (window.scrollY > 400) {
 
-
-        setInterval(function() {
-
-            testimonialIndex++;
-
-            if (
-                testimonialIndex >= testimonials.length
-            ) {
-
-                testimonialIndex = 0;
+                button.style.display = "flex";
 
             }
 
+            else {
 
-            document.getElementById(
-                "testimonialText"
-            ).innerText =
-                testimonials[testimonialIndex].text;
+                button.style.display = "none";
 
+            }
 
-            document.getElementById(
-                "testimonialName"
-            ).innerText =
-                testimonials[testimonialIndex].name;
+        });
 
 
-        }, 5000);
+
+        function scrollToTop() {
+
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+
+            });
+
+        }
+
+
+
+        /* SCROLL ANIMATION */
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+
+        function revealOnScroll() {
+
+            revealElements.forEach(function(element) {
+
+                const windowHeight =
+                    window.innerHeight;
+
+
+                const elementTop =
+                    element.getBoundingClientRect().top;
+
+
+                if (elementTop < windowHeight - 100) {
+
+                    element.classList.add("active");
+
+                }
+
+            });
+
+        }
+
+
+        window.addEventListener(
+            "scroll",
+            revealOnScroll
+        );
+
+
+        revealOnScroll();
+
 
     </script>
 
